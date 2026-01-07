@@ -7,36 +7,34 @@ import Git from "public/assets/skills/git.png";
 import Docker from "public/assets/skills/docker.png";
 import Tailwind from "public/assets/skills/tailwind.png";
 //
-import WhatsappClone from "public/assets/projects/whatsapp-web-clone/whatsapp.png";
-import Easymunch from "public/assets/projects/easy-munch/munch.png";
-import ReactDashboard from "public/assets/projects/react-dashboard/dashboard.png";
-import MovieApp from "public/assets/projects/react-movie-app/movie.png";
-import Hyperloop from "public/assets/projects/hyperloop/hyperloop.png";
+import EcommerceStore from "public/assets/projects/ecommerce-store/ecommerce.jpg";
+import EVC from "public/assets/projects/evc/evc.jpg";
+import BuildMyMVP from "public/assets/projects/build-my-mvp/mvp.jpg";
 
 export const skills = [
+	{
+		name: "PHP",
+		image: Javascript,
+	},
+	{
+		name: "Laravel",
+		image: NextJS,
+	},
+	{
+		name: "Node JS",
+		image: Node,
+	},
 	{
 		name: "React JS",
 		image: ReactImg,
 	},
 	{
-		name: "Next JS",
-		image: NextJS,
-	},
-	{
-		name: "Tailwind CSS",
+		name: "MongoDB",
 		image: Tailwind,
 	},
 	{
-		name: "Typescript",
+		name: "MySQL",
 		image: Typescript,
-	},
-	{
-		name: "Javascript",
-		image: Javascript,
-	},
-	{
-		name: "Node JS",
-		image: Node,
 	},
 	{
 		name: "Git",
@@ -50,35 +48,23 @@ export const skills = [
 
 export const projects = [
 	{
-		name: "Hyperloop",
-		image: Hyperloop,
-		projectUrl: "/projects/hyperloop",
-		tech: "Next JS",
+		name: "Ecommerce Store",
+		image: EcommerceStore,
+		projectUrl: "/projects/ecommerce-store",
+		tech: "Laravel & PHP",
 	},
 	{
-		name: "Whatsapp Web Clone",
-		image: WhatsappClone,
-		projectUrl: "/projects/whatsapp-clone",
-		tech: "Next JS",
+		name: "EVC",
+		image: EVC,
+		projectUrl: "/projects/evc",
+		tech: "Laravel",
 	},
 	{
-		name: "Easymunch",
-		image: Easymunch,
-		projectUrl: "/projects/easy-munch",
-		tech: "React JS",
+		name: "BuildMyMVP",
+		image: BuildMyMVP,
+		projectUrl: "/projects/build-my-mvp",
+		tech: "Node.js & React",
 	},
-	{
-		name: "React Dashboard",
-		image: ReactDashboard,
-		projectUrl: "/projects/react-dashboard",
-		tech: "React JS",
-	},
-	// {
-	// 	name: "React Movie App",
-	// 	image: MovieApp,
-	// 	projectUrl: "/projects/movie-app",
-	// 	tech: "React JS",
-	// },
 ];
 
 export const emConfig = {

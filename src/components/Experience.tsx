@@ -4,26 +4,28 @@ import BasicTabs from "./Tabs";
 
 const Experience = () => {
 	const FCMBExperience = {
-		companyName: "First City Monument Bank",
-		role: "Front-End Developer",
-		duration: "July 2022 - Present",
+		companyName: "Freelance Backend Developer",
+		role: "Full Stack Developer",
+		duration: "2023 - Present",
 		activities: [
-			"Collaborated with a team of professional engineers to plan, design, build, and implement the user interface systems of web-based applications and provide a satisfactory user experience with no issues, errors, or downtime.",
-			"Contributed to the building and optimization of some in-house applications to optimize productivity as well as customer-facing account management applications, which increased customer inflow by automating account opening processes.",
-			"Played an active role in testing, troubleshooting, and resolving issues such as those related to performance, accessibility,  browser compatibility, and security.",
-			"Reviewing and approving pull requests from other team members.",
-			"Collaborating on large codebase with other developers using git and the Microsoft Azure DevOps cloud solutions platform.",
+			"Built enterprise-level ecommerce platforms using Laravel framework with robust payment integrations.",
+			"Designed and implemented RESTful APIs using PHP and Node.js for various web applications.",
+			"Managed complex database architectures with MySQL and MongoDB for high-traffic applications.",
+			"Implemented real-time features using WebSockets and optimized backend performance.",
+			"Collaborated with frontend developers to ensure seamless API integration and data flow.",
 		],
 	};
 
 	const MuzzlabExperience = {
-		companyName: "Muzzlab Technologies",
-		role: "Front-End Developer",
-		duration: "April 2020 - July 2022",
+		companyName: "Web Development Startup",
+		role: "Backend Developer",
+		duration: "2021 - 2023",
 		activities: [
-			"Collaborated with the project manager and backend engineer.",
-			"Designed and developed the client side of the sub-company’s ( Illusion Decals ) website while writing re-usable and easy to maintain codes.",
-			"Ensured cross-platform development and optimization for mobile responsiveness.",
+			"Contributed to building multiple web applications using Laravel and Node.js.",
+			"Implemented database migrations and optimization strategies for better performance.",
+			"Worked on API development and third-party service integrations.",
+			"Participated in code reviews and maintained code quality standards.",
+			"Worked with team members using Git and agile development practices.",
 		],
 	};
 
@@ -38,10 +40,10 @@ const Experience = () => {
 				<h2 className="py-4">Where I&apos;ve Worked</h2>
 				<div className="mt-2 ">
 					<BasicTabs
-						tabList={["FCMB", "Muzzlab"]}
+						tabList={["Freelance", "Startup"]}
 						tabPanel={[
-							<Details key={"FCMB"} experienceDetails={FCMBExperience} />,
-							<Details key={"mUZZLAB"} experienceDetails={MuzzlabExperience} />,
+							<Details key={"FREELANCE"} experienceDetails={FCMBExperience} />,
+							<Details key={"STARTUP"} experienceDetails={MuzzlabExperience} />,
 						]}
 					/>
 				</div>

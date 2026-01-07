@@ -111,8 +111,8 @@ const Contact = () => {
 									/>
 								</div>
 								<div>
-									<h2 className="py-2">Nosarumen Imuentinyan</h2>
-									<p className="text-xl mt-2">Front-End Developer</p>
+								<h2 className="py-2">Zain Ali</h2>
+								<p className="text-xl mt-2">Backend Developer</p>
 									<p className="py-4 text-lg">
 										I am available for freelance or full-time positions. Contact me and
 										let&apos;s talk.
@@ -125,17 +125,16 @@ const Contact = () => {
 									</div>
 									<div className="flex items-center justify-between py-4">
 										<a
-											href="https://www.linkedin.com/in/nosarumen-imuentinyan/"
-											target="_blank"
-											rel="noreferrer"
-										>
-											<div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in hover:bg-secondary duration-300">
-												<FaLinkedinIn title="Linkedin" />
-											</div>
-										</a>
-										<a
-											href="https://github.com/Sir-Rumeh/"
-											target="_blank"
+									href="https://www.linkedin.com/in/recluzedev"
+									target="_blank"
+									rel="noreferrer"
+								>
+									<div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in hover:bg-secondary duration-300">
+										<FaLinkedinIn title="Linkedin" />
+									</div>
+								</a>
+								<a
+									href="https://github.com/tecnodeveloper/"
 											rel="noreferrer"
 										>
 											<div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in hover:bg-secondary duration-300">
