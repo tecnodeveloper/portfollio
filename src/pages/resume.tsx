@@ -6,10 +6,10 @@ import { FaGithub, FaLinkedinIn, FaDownload } from "react-icons/fa";
 import ResumeShot from "public/assets/Zain_Ali_Resume.jpg";
 
 const ResumePdf = () => {
-	const resumePdfLink = "/assets/Zain_Ali_Resume.pdf";
+	const resumePdfLink = "/assets/ZainResume.pdf";
 	return (
 		<>
-			<div className="relative">
+			<div className="relative w-full max-w-2xl mx-auto">
 				<div className="absolute top-0 right-0 z-10 flex items-center justify-center">
 					<a href={resumePdfLink} download className="p-0">
 						<div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer scale-75 hover:scale-100 ease-in  hover:bg-secondary duration-300 ">
@@ -17,7 +17,7 @@ const ResumePdf = () => {
 						</div>
 					</a>
 				</div>
-				<Image src={ResumeShot} className="rounded-xl " alt="/" loading="lazy" />
+				<Image src={ResumeShot} className="rounded-xl w-full h-auto object-contain" alt="Zain Ali Resume" loading="lazy" />
 			</div>
 		</>
 	);

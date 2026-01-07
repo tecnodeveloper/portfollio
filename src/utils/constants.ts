@@ -1,11 +1,12 @@
-import ReactImg from "public/assets/skills/react.png";
-import NextJS from "public/assets/skills/nextjs.png";
+import PHP from "public/assets/skills/javascript.png";
 import Javascript from "public/assets/skills/javascript.png";
-import Typescript from "public/assets/skills/typescript.png";
 import Node from "public/assets/skills/node.png";
+import Jquery from "public/assets/skills/javascript.png";
+import ReactImg from "public/assets/skills/react.png";
+import Tailwind from "public/assets/skills/tailwind.png";
 import Git from "public/assets/skills/git.png";
 import Docker from "public/assets/skills/docker.png";
-import Tailwind from "public/assets/skills/tailwind.png";
+import MongoDB from "public/assets/skills/mongo.png";
 //
 import EcommerceStore from "public/assets/projects/ecommerce-store/ecommerce.jpg";
 import EVC from "public/assets/projects/evc/evc.jpg";
@@ -14,27 +15,27 @@ import BuildMyMVP from "public/assets/projects/build-my-mvp/mvp.jpg";
 export const skills = [
 	{
 		name: "PHP",
-		image: Javascript,
+		image: PHP,
 	},
 	{
-		name: "Laravel",
-		image: NextJS,
+		name: "JavaScript",
+		image: Javascript,
 	},
 	{
 		name: "Node JS",
 		image: Node,
 	},
 	{
-		name: "React JS",
+		name: "Jquery",
+		image: Jquery,
+	},
+	{
+		name: "React",
 		image: ReactImg,
 	},
 	{
-		name: "MongoDB",
+		name: "Tailwind CSS",
 		image: Tailwind,
-	},
-	{
-		name: "MySQL",
-		image: Typescript,
 	},
 	{
 		name: "Git",
@@ -43,6 +44,10 @@ export const skills = [
 	{
 		name: "Docker",
 		image: Docker,
+	},
+	{
+		name: "MongoDB",
+		image: MongoDB,
 	},
 ];
 
