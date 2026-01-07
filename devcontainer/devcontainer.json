@@ -1,0 +1,14 @@
+{
+  "name": "Next.js Portfolio",
+  // CHANGE THIS LINE:
+  "image": "node:20",
+
+  "customizations": {
+    "vscode": {
+      "settings": {},
+      "extensions": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode"]
+    }
+  },
+  "forwardPorts": [3000],
+  "postCreateCommand": "npm install"
+}
