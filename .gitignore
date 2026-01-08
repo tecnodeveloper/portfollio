@@ -2,3 +2,4 @@ node_modules
 .devcontainer
 .next
 devcontainer
+.github
