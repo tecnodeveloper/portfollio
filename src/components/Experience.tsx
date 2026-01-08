@@ -4,9 +4,9 @@ import BasicTabs from "./Tabs";
 
 const Experience = () => {
 	const FCMBExperience = {
-		companyName: "Freelance Backend Developer",
-		role: "Full Stack Developer",
-		duration: "2023 - Present",
+		companyName: "NexL Tech",
+		role: "Backend Developer",
+		duration: "July 2025 - Oct 2025",
 		activities: [
 			"Built enterprise-level ecommerce platforms using Laravel framework with robust payment integrations.",
 			"Designed and implemented RESTful APIs using PHP and Node.js for various web applications.",
@@ -17,12 +17,12 @@ const Experience = () => {
 	};
 
 	const MuzzlabExperience = {
-		companyName: "Web Development Startup",
+		companyName: "Freelance Backend Developer",
 		role: "Backend Developer",
-		duration: "2021 - 2023",
+		duration: "2023 - Present",
 		activities: [
 			"Contributed to building multiple web applications using Laravel and Node.js.",
-			"Implemented database migrations and optimization strategies for better performance.",
+			"Worked with frontend developer to integerate smooth Api flow.",
 			"Worked on API development and third-party service integrations.",
 			"Participated in code reviews and maintained code quality standards.",
 			"Worked with team members using Git and agile development practices.",
@@ -40,10 +40,10 @@ const Experience = () => {
 				<h2 className="py-4">Where I&apos;ve Worked</h2>
 				<div className="mt-2 ">
 					<BasicTabs
-						tabList={["Freelance", "Startup"]}
+						tabList={["Freelance", "Company"]}
 						tabPanel={[
+							<Details key={"Company"} experienceDetails={MuzzlabExperience} />,
 							<Details key={"FREELANCE"} experienceDetails={FCMBExperience} />,
-							<Details key={"STARTUP"} experienceDetails={MuzzlabExperience} />,
 						]}
 					/>
 				</div>

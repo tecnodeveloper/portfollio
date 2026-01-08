@@ -71,6 +71,9 @@ const EcommerceStore = () => {
 										<RiRadioButtonFill className="pr-1" /> PHP
 									</p>
 									<p className="text-gray-600 py-2 flex items-center">
+										<RiRadioButtonFill className="pr-1" /> Tailwindcss
+									</p>
+									<p className="text-gray-600 py-2 flex items-center">
 										<RiRadioButtonFill className="pr-1" /> MySQL
 									</p>
 									<p className="text-gray-600 py-2 flex items-center">

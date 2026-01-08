@@ -169,7 +169,7 @@ const Navbar = () => {
 										<FaGithub title="GitHub" />
 									</div>
 								</a>
-								<Link href="/#contact">
+								<Link href="recluzedev@gmail.com">
 									<div
 										onClick={() => setNav(!nav)}
 										className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in hover:bg-secondary duration-300"

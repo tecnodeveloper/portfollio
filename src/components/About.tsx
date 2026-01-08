@@ -14,7 +14,7 @@ return (
 A dedicated Backend Developer with expertise in building scalable web applications using PHP, Laravel, and Node.js. I have hands-on experience developing robust REST APIs, managing databases with MySQL and MongoDB, and implementing modern backend architectures that power real-world applications.
 </p>
 <p className="py-2 text-gray-600 text-lg">
-I specialize in Laravel framework for rapid and efficient backend development, with strong knowledge of database design, API development, and server-side programming. Currently working on enterprise-level ecommerce solutions and passionate about creating efficient, maintainable code. I believe in writing clean code, following best practices, and continuously learning new technologies.
+I specialize in Laravel framework for rapid and efficient backend development, with strong knowledge of database design, API development, and server-side programming. Currently working on OpenSource project on laravel ecommerce solutions and passionate about creating efficient, maintainable code. I believe in writing clean code, following best practices, and continuously learning new technologies.
 </p>
 <div className="w-[50%]">
 <Link href="/#projects">

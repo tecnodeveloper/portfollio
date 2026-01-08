@@ -19,7 +19,7 @@ const Main = () => {
 							using Laravel, Node.js, and modern web technologies.
 						</p>
 						<p className="py-4 text-gray-600 sm:max-w-[70%] m-auto text-lg">
-							I specialize in PHP, Laravel, MongoDB, and MySQL database design for high-performance applications.
+							I specialize in PHP, Laravel, Node.js, and MySQL database design for high-performance applications.
 						</p>
 					</div>
 
@@ -40,7 +40,7 @@ const Main = () => {
 									<FaGithub title="GitHub" />
 								</div>
 							</a>
-							<Link href="/#contact">
+							<Link href="recluzedev@gmail.com">
 								<div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in hover:bg-secondary duration-300">
 									<AiOutlineMail title="Contact" />
 								</div>

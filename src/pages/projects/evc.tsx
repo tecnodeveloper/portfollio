@@ -20,7 +20,7 @@ const EVC = () => {
 					<div className="absolute z-1 w-full h-[50vh] bg-gradient-to-r from-secondary to-lightPrimary"></div>
 					<div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
 						<h2 className="py-2">EVC Application</h2>
-						<h3>Laravel / Blade / MySQL / Tailwind CSS</h3>
+						<h3>Laravel / Blade / PHP / MySQL / Tailwind CSS</h3>
 					</div>
 				</div>
 
