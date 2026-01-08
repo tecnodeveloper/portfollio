@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import { skills } from "../utils/constants";
 
@@ -18,7 +17,7 @@ const Skills = () => {
 								>
 									<div className="grid grid-cols-2 gap-4 justify-center items-center">
 										<div className="m-auto">
-											<Image src={skill.image} width="64px" height="64px" alt="/" />
+											<img src={skill.image} width="64" height="64" alt={skill.name} />
 										</div>
 										<div className="flex flex-col items-center justify-center">
 											<h3 className="text-lg">{skill.name}</h3>

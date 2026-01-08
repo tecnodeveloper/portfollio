@@ -1,7 +1,7 @@
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
-import AboutImg from "public/assets/ProfilePicture.jpeg";
+
+const AboutImg = "/assets/ProfilePicture.jpeg";
 
 const About = () => {
 return (
@@ -26,12 +26,10 @@ Check out some of my latest projects.
 </div>
 <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300 overflow-hidden">
 <div data-aos="fade-up" data-aos-duration="1000" className="w-full">
-<Image 
+<img 
 src={AboutImg} 
 className="rounded-xl w-full h-auto object-cover" 
 alt="Zain Ali" 
-height={600} 
-width={500} 
 loading="lazy" 
 />
 </div>

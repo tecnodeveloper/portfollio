@@ -1,10 +1,10 @@
-import Image from "next/image";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import NavLogo from "public/assets/navLogo.png";
+
+const NavLogo = "/assets/navLogo.png";
 
 const Navbar = () => {
 	const [nav, setNav] = useState(false);
@@ -39,9 +39,9 @@ const Navbar = () => {
 			<div className="flex justify-between items-center h-full px-2 2xl:px-16 ">
 				<Link href="/">
 					<a>
-						<Image
+						<img
 							src={NavLogo}
-							alt="/"
+							alt="Logo"
 							width="125"
 							height="50"
 							className="cursor-pointer"
@@ -99,7 +99,7 @@ const Navbar = () => {
 						<div className="flex w-full items-center justify-between">
 							<Link href="/">
 								<a>
-									<Image src={NavLogo} width="87" height="35" alt="/" loading="lazy" />
+									<img src={NavLogo} width="87" height="35" alt="Logo" loading="lazy" />
 								</a>
 							</Link>
 							<div

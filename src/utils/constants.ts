@@ -1,16 +1,18 @@
-import PHP from "public/assets/skills/javascript.png";
-import Javascript from "public/assets/skills/javascript.png";
-import Node from "public/assets/skills/node.png";
-import Jquery from "public/assets/skills/javascript.png";
-import ReactImg from "public/assets/skills/react.png";
-import Tailwind from "public/assets/skills/tailwind.png";
-import Git from "public/assets/skills/git.png";
-import Docker from "public/assets/skills/docker.png";
-import MongoDB from "public/assets/skills/mongo.png";
-//
-import EcommerceStore from "public/assets/projects/ecommerce-store/ecommerce.jpg";
-import EVC from "public/assets/projects/evc/evc.jpg";
-import BuildMyMVP from "public/assets/projects/build-my-mvp/mvp.jpg";
+// Skills images
+const PHP = "/assets/skills/javascript.png";
+const Javascript = "/assets/skills/javascript.png";
+const Node = "/assets/skills/node.png";
+const Jquery = "/assets/skills/javascript.png";
+const ReactImg = "/assets/skills/react.png";
+const Tailwind = "/assets/skills/tailwind.png";
+const Git = "/assets/skills/git.png";
+const Docker = "/assets/skills/docker.png";
+const MongoDB = "/assets/skills/mongo.png";
+
+// Project images
+const EcommerceStore = "/assets/projects/ecommerce-store/ecommerce.jpg";
+const EVC = "/assets/projects/evc/evc.jpg";
+const BuildMyMVP = "/assets/projects/build-my-mvp/mvp.jpg";
 
 export const skills = [
 	{

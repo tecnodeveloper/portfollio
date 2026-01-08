@@ -1,9 +1,9 @@
 import React from "react";
 import Head from "next/head";
 import Link from "next/link";
-import Image from "next/image";
 import { FaGithub, FaLinkedinIn, FaDownload } from "react-icons/fa";
-import ResumeShot from "public/assets/Zain_Ali_Resume.jpg";
+
+const ResumeShot = "/assets/Zain_Ali_Resume.jpg";
 
 const ResumePdf = () => {
 	const resumePdfLink = "/assets/ZainResume.pdf";
@@ -17,7 +17,7 @@ const ResumePdf = () => {
 						</div>
 					</a>
 				</div>
-				<Image src={ResumeShot} className="rounded-xl w-full h-auto object-contain" alt="Zain Ali Resume" loading="lazy" />
+				<img src={ResumeShot} className="rounded-xl w-full h-auto object-contain" alt="Zain Ali Resume" loading="lazy" />
 			</div>
 		</>
 	);
