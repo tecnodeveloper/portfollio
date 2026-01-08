@@ -1,8 +1,8 @@
 // Skills images
-const PHP = "/assets/skills/javascript.png";
+const PHP = "/assets/skills/php_logo.png";
 const Javascript = "/assets/skills/javascript.png";
 const Node = "/assets/skills/node.png";
-const Jquery = "/assets/skills/javascript.png";
+const Jquery = "/assets/skills/jqueryLogo .png";
 const ReactImg = "/assets/skills/react.png";
 const Tailwind = "/assets/skills/tailwind.png";
 const Git = "/assets/skills/git.png";

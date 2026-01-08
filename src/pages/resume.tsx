@@ -3,7 +3,7 @@ import Head from "next/head";
 import Link from "next/link";
 import { FaGithub, FaLinkedinIn, FaDownload } from "react-icons/fa";
 
-const ResumeShot = "/assets/Zain_Ali_Resume.jpg";
+const ResumeShot = "/assets/ZainCV.jpg";
 
 const ResumePdf = () => {
 	const resumePdfLink = "/assets/ZainResume.pdf";
