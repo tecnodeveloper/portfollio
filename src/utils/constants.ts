@@ -2,7 +2,6 @@
 const PHP = "/assets/skills/php_logo.png";
 const Javascript = "/assets/skills/javascript.png";
 const Node = "/assets/skills/node.png";
-const Jquery = "/assets/skills/jqueryLogo .png";
 const ReactImg = "/assets/skills/react.png";
 const Tailwind = "/assets/skills/tailwind.png";
 const Git = "/assets/skills/git.png";
@@ -13,6 +12,7 @@ const MongoDB = "/assets/skills/mongo.png";
 const EcommerceStore = "/assets/projects/ecommerce-store/ecommerce.jpg";
 const EVC = "/assets/projects/evc/evc.jpg";
 const BuildMyMVP = "/assets/projects/build-my-mvp/mvp.jpg";
+const ANPR = "/assets/projects/anpr/anpr.jpg";
 
 export const skills = [
 	{
@@ -26,10 +26,6 @@ export const skills = [
 	{
 		name: "Node JS",
 		image: Node,
-	},
-	{
-		name: "Jquery",
-		image: Jquery,
 	},
 	{
 		name: "React",
@@ -59,18 +55,40 @@ export const projects = [
 		image: EcommerceStore,
 		projectUrl: "/projects/ecommerce-store",
 		tech: "Laravel & PHP",
+		description: "Full-featured ecommerce platform with admin dashboard, product management, cart, payment integration, and order tracking.",
+		tags: ["Laravel", "PHP", "MySQL", "Bootstrap"],
+		github: "https://github.com/tecnodeveloper/EcommerceStore",
+		category: "Web App",
 	},
 	{
-		name: "EVC",
+		name: "EVC – Electric Vehicle Charging",
 		image: EVC,
 		projectUrl: "/projects/evc",
 		tech: "Laravel",
+		description: "Smart EV charging station management system with real-time slot booking, user authentication, and charging history.",
+		tags: ["Laravel", "PHP", "MySQL", "REST API"],
+		github: "https://github.com/tecnodeveloper",
+		category: "Web App",
 	},
 	{
 		name: "BuildMyMVP",
 		image: BuildMyMVP,
 		projectUrl: "/projects/build-my-mvp",
 		tech: "Node.js & React",
+		description: "Platform connecting entrepreneurs with developers to rapidly build MVPs. Features project listing, proposals, and real-time chat.",
+		tags: ["Node.js", "React", "MongoDB", "Tailwind"],
+		github: "https://github.com/tecnodeveloper",
+		category: "Full Stack",
+	},
+	{
+		name: "Vehicle Number Plate Recognition",
+		image: ANPR,
+		projectUrl: "/projects/anpr",
+		tech: "Python & AI/ML",
+		description: "AI-powered Automatic Number Plate Recognition (ANPR) system using computer vision and deep learning to detect and read vehicle license plates in real-time.",
+		tags: ["Python", "OpenCV", "TensorFlow", "AI/ML"],
+		github: "https://github.com/tecnodeveloper",
+		category: "AI / ML",
 	},
 ];
 

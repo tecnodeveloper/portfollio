@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React, { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
@@ -9,6 +10,8 @@ const NavLogo = "/assets/navLogo.png";
 const Navbar = () => {
 	const [nav, setNav] = useState(false);
 	const [shadow, setShadow] = useState(false);
+	const router = useRouter();
+	const isResumePage = router.pathname === "/resume";
 	const navBg = "#ecf0f3";
 	const linkColor = "#1f2937";
 
@@ -50,7 +53,7 @@ const Navbar = () => {
 					</a>
 				</Link>
 				<div>
-					<ul style={{ color: `${linkColor}` }} className="hidden md:flex">
+					<ul style={{ color: `${linkColor}` }} className="hidden md:flex items-center">
 						{/* DO MAP HERE */}
 						<li className="ml-10 text-sm uppercase hover:border-b hover:text-primary">
 							<Link href="/">Home</Link>
@@ -71,9 +74,23 @@ const Navbar = () => {
 							<Link href="/#contact">Contact</Link>
 						</li>
 
-						<li className="ml-20 text-sm uppercase hover:border-b flex items-center gap-x-3 hover:text-primary ">
-							<div className="w-4 h-[0.1px] bg-primary"></div>
-							<Link href="/resume">Resume</Link>
+						<li className="ml-6">
+							<Link href="/resume">
+								<a
+									className={`
+										relative px-5 py-2 text-sm uppercase font-semibold rounded-full
+										border-2 border-primary text-primary
+										transition-all duration-300 ease-in-out
+										hover:bg-primary hover:text-white hover:shadow-lg hover:shadow-primary/50
+										${isResumePage
+											? "bg-primary text-white shadow-lg shadow-primary/60 animate-pulse"
+											: "bg-transparent"
+										}
+									`}
+								>
+									Resume
+								</a>
+							</Link>
 						</li>
 					</ul>
 
@@ -147,7 +164,10 @@ const Navbar = () => {
 								</li>
 							</Link>
 							<Link href="/resume" className="hover:text-primary">
-								<li onClick={() => setNav(false)} className="py-4 text-sm">
+								<li
+									onClick={() => setNav(false)}
+									className={`py-4 text-sm font-semibold ${isResumePage ? "text-primary border-l-4 border-primary pl-2" : ""}`}
+								>
 									Resume
 								</li>
 							</Link>
