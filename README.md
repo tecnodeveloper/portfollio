@@ -3,7 +3,7 @@
 ## 🔗 Live Demo
 
 Explore the live portfolio here:
- [https://recluzedev.me](https://recluzedev.me)
+ [recluzedev](https://portfollio-dun-theta.vercel.app/)
 
 ---
 
