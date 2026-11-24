@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+@theme {
+	/* Surfaces */
+	--color-bg: #0a0a0a;
+	--color-surface: #121212;
+	--color-surface-hover: #181818;
+
+	/* Lines */
+	--color-border: #232323;
+	--color-border-hover: #2e2e2e;
+
+	/* Text */
+	--color-fg: #fafafa;
+	--color-muted: #a1a1aa;
+	--color-subtle: #71717a;
+
+	/* Accent */
+	--color-accent: #34d399;
+	--color-accent-dim: #065f46;
+
+	--font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+	--font-mono: var(--font-geist-mono), ui-monospace, monospace;
+
+	/* Section rhythm, used by <Section> */
+	--spacing-section: clamp(5rem, 12vw, 9rem);
+}
+
+@layer base {
+	* {
+		border-color: var(--color-border);
+	}
+
+	html {
+		scroll-behavior: smooth;
+		/* Fixed navbar is 4rem; keep anchored sections clear of it. */
+		scroll-padding-top: 5rem;
+		-webkit-text-size-adjust: 100%;
+	}
+
+	body {
+		background-color: var(--color-bg);
+		color: var(--color-fg);
+		font-family: var(--font-sans);
+		line-height: 1.7;
+		-webkit-font-smoothing: antialiased;
+		text-rendering: optimizeLegibility;
+	}
+
+	h1,
+	h2,
+	h3 {
+		line-height: 1.15;
+		text-wrap: balance;
+	}
+
+	p {
+		text-wrap: pretty;
+	}
+
+	::selection {
+		background-color: var(--color-accent);
+		color: var(--color-bg);
+	}
+
+	:focus-visible {
+		outline: 2px solid var(--color-accent);
+		outline-offset: 2px;
+		border-radius: 2px;
+	}
+
+	/* Only suppress the ring for mouse users, never for keyboard users. */
+	:focus:not(:focus-visible) {
+		outline: none;
+	}
+}
+
+@layer utilities {
+	/* The one piece of texture on the page: a soft emerald bloom behind the hero. */
+	.hero-glow::before {
+		content: "";
+		position: absolute;
+		inset: 0;
+		pointer-events: none;
+		background: radial-gradient(
+			60rem 40rem at 15% 0%,
+			color-mix(in srgb, var(--color-accent) 6%, transparent),
+			transparent 70%
+		);
+	}
+
+	/* The oversized closing word: present but barely there, until hovered. */
+	.text-ghost {
+		color: color-mix(in srgb, var(--color-fg) 9%, var(--color-bg));
+	}
+
+	.fill-ghost {
+		fill: color-mix(in srgb, var(--color-fg) 9%, var(--color-bg));
+	}
+
+	.text-gradient-fg {
+		background: linear-gradient(
+			180deg,
+			var(--color-fg) 0%,
+			color-mix(in srgb, var(--color-fg) 70%, var(--color-bg)) 100%
+		);
+		-webkit-background-clip: text;
+		background-clip: text;
+		color: transparent;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+	}
+}
